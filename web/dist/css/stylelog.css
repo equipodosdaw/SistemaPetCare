@@ -1,0 +1,39 @@
+body {
+    background-image: url(../img/login/fondo2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/*Contenedor login*/
+.container{
+    background: linear-gradient(105deg,#6e99e6 ,#093c94);
+}
+
+/*Icono login y sign up*/
+.log-sign-icons{
+    font-size: 6rem;
+    color: #002B76;
+}
+
+.login-btn{
+ background-color: #003796;
+}
+
+.login-btn:hover{
+    background-color: #003796;
+}
+
+a.btn.btn-block.btn-social.btn-facebook.btn-flat.textcredendial {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    margin-bottom: 10px;
+}
+
+.ocultar {
+    display:none;
+}
+
+.mostrar {
+    display:block;
+}
