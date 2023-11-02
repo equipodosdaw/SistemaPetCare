@@ -25,12 +25,12 @@
                     <!-- Menu Toggle Button -->
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <span class="hidden-xs"> ${admin.nombreUsuario}</span>
-                        <img src="dist/img/user.png" class="user-image" alt="User Image">
+                        <img src="dist/img/admin.png" class="user-image" alt="User Image">
                     </a>
                     <ul class="dropdown-menu">
                         <!-- The user image in the menu -->
                         <li class="user-header">
-                            <img src="dist/img/user.png" class="img-circle" alt="User Image">
+                            <img src="dist/img/admin.png" class="img-circle" alt="User Image">
 
                             <p>   
                                 Bienvenido - ${admin.nombreUsuario}
