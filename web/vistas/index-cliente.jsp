@@ -35,7 +35,7 @@
                     <!-- mini logo for sidebar mini 50x50 pixels -->
                     <span class="logo-mini">PTC</span>
                     <!-- logo for regular state and mobile devices -->
-                    <span class="logo-lg">PETCARE</span>
+                    <span class="logo-lg"><img class="img-fluid" src="dist/img/logo/logo_blanco_PETCARE.png" alt=""/></span>
                 </a>
 
                 <!-- Header Navbar -->

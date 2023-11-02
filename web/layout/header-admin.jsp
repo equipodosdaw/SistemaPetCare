@@ -3,7 +3,7 @@
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini"><img class="img-fluid" src="dist/img/logo/icon-logo.png" alt=""/></span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><img class="img-fluid" src="dist/img/logo/logo-blanco-horizontal.png" alt=""/></span>
+        <span class="logo-lg"><img class="img-fluid" src="dist/img/logo/logo_blanco_PETCARE.png" alt=""/></span>
         
 
         
