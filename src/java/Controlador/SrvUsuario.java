@@ -51,6 +51,12 @@ public class SrvUsuario extends HttpServlet {
                     case "eliminarUsuario":
                         eliminarUsuario(request, response);
                         break;
+                    case "desactivarUsuario":
+                        desactivarUsuario(request, response);
+                        break;
+                    case "activarUsuario":
+                        activarUsuario(request, response);
+                        break;
                     default:
                         response.sendRedirect("login.jsp");
                 }
@@ -112,6 +118,7 @@ public class SrvUsuario extends HttpServlet {
         DAOUSUARIO dao;
         Usuario usuario;
         usuario = this.obtenerUsuario(request);
+
         dao = new DAOUSUARIO();
         usuario = dao.identificar(usuario);
         if (usuario != null && usuario.getPerfilUsuario().getNombrePerfil().equals("ADMINISTRADOR")) {
@@ -356,6 +363,40 @@ public class SrvUsuario extends HttpServlet {
             usus.setId_usuario(Integer.parseInt(request.getParameter("cod")));
             try {
                 dao.eliminarUsuario(usus);
+                response.sendRedirect("srvUsuario?accion=listasUsuarios");
+            } catch (Exception e) {
+                request.setAttribute("msje", "No se pudo acceder a la base de datos" + e.getMessage());
+            }
+        } else {
+            request.setAttribute("msje", "No se encontró el usuario");
+        }
+    }
+    
+    private void desactivarUsuario(HttpServletRequest request, HttpServletResponse response) {
+        DAOUSUARIO dao = new DAOUSUARIO();
+        Usuario usus = new Usuario();
+
+        if (request.getParameter("cod") != null) {
+            usus.setId_usuario(Integer.parseInt(request.getParameter("cod")));
+            try {
+                dao.desactivarUsuario(usus);
+                response.sendRedirect("srvUsuario?accion=listasUsuarios");
+            } catch (Exception e) {
+                request.setAttribute("msje", "No se pudo acceder a la base de datos" + e.getMessage());
+            }
+        } else {
+            request.setAttribute("msje", "No se encontró el usuario");
+        }
+    }
+    
+     private void activarUsuario(HttpServletRequest request, HttpServletResponse response) {
+        DAOUSUARIO dao = new DAOUSUARIO();
+        Usuario usus = new Usuario();
+
+        if (request.getParameter("cod") != null) {
+            usus.setId_usuario(Integer.parseInt(request.getParameter("cod")));
+            try {
+                dao.activarUsuario(usus);
                 response.sendRedirect("srvUsuario?accion=listasUsuarios");
             } catch (Exception e) {
                 request.setAttribute("msje", "No se pudo acceder a la base de datos" + e.getMessage());

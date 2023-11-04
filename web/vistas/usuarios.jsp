@@ -78,13 +78,13 @@
                                                 <c:choose>
                                                     <c:when test="${user.estado == true}">
                                                         <input type="hidden" id="item" value="${user.id_usuario}">
-                                                        <a id="desactivarUsuario" href="srvUsuario?cambiar=desactivar&cod=${user.id_usuario}" class="btn btn-danger"  data-toggle="tooltip" title="Desactivar" data-original-title="Desactivar">
+                                                        <a id="desactivarUsuario" href="srvUsuario?accion=desactivarUsuario&cod=${user.id_usuario}" class="btn btn-danger"  data-toggle="tooltip" title="Desactivar" data-original-title="Desactivar">
                                                             <i class="fa fa-remove"></i></a>
                                                         </c:when>
                                                         <c:otherwise>
                                                         <input type="hidden" id="item" value="${user.id_usuario}">
-                                                        <a id="activarUsuario" href="srvUsuario?cambiar=activar&cod=${user.id_usuario}" class="btn btn-primary" data-toggle="tooltip" title="Activar" data-original-title="Activar">
-                                                            <i class="glyphicon glyphicon-eye-open"></i></a>
+                                                        <a id="activarUsuario" href="srvUsuario?accion=activarUsuario&cod=${user.id_usuario}" class="btn btn-primary" data-toggle="tooltip" title="Activar" data-original-title="Activar">
+                                                            <i class="glyphicon glyphicon-ok"></i></a>
                                                         </c:otherwise>
                                                     </c:choose>
                                                 <!-- ELIMINAR USUARIOS -->

@@ -163,6 +163,36 @@ public class DAOUSUARIO extends Conexion {
             this.cerrar(false);
             throw e;
         }
+    }
+        
+    public void desactivarUsuario(Usuario usu) throws Exception {
+        String sql = "UPDATE usuario SET estado = 0"
+                + " WHERE id_usuario = " + usu.getId_usuario();
+
+        try {
+            this.conectar(false);
+            this.ejecutarOrden(sql);
+            this.cerrar(true);
+        } catch (Exception e) {
+            this.cerrar(false);
+            throw e;
+        }
 
     }
+    
+        public void activarUsuario(Usuario usu) throws Exception {
+        String sql = "UPDATE usuario SET estado = 1"
+                + " WHERE id_usuario = " + usu.getId_usuario();
+
+        try {
+            this.conectar(false);
+            this.ejecutarOrden(sql);
+            this.cerrar(true);
+        } catch (Exception e) {
+            this.cerrar(false);
+            throw e;
+        }
+
+    }
+
 }
