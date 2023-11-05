@@ -7,12 +7,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>PetCare | Login</title>
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-      <!--  <link rel="stylesheet" href="dist/css/stylelog.css"> -->
+      <link rel="stylesheet" href="dist/css/stylelog.css">
         <%@ include file="layout/links.jsp"%>
 
     </head>
     <body class="d-flex justify-content-center align-items-center vh-100">
-        <div class="container col-lg-5 col-md-8 col-10 p-5 rounded-5 shadow">
+        <div class="container">
+            <div class="col-lg-5 col-md-8 col-10 p-5 rounded-5 shadow">
 
             <div>
                 <i class="bi bi-person-circle log-sign-icons d-flex justify-content-center mb-2" id="login-icon"></i>
@@ -65,6 +66,7 @@
                 <a href="signup.jsp" id="signup-link" class="link-light">Registrate</a>
             </div>
         </div>
+                    </div>
 
         <%@ include file="layout/scripts.jsp"%>
 
