@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>PetCare | Login</title>
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-        <link rel="stylesheet" href="dist/css/stylelog.css">
+      <!--  <link rel="stylesheet" href="dist/css/stylelog.css"> -->
         <%@ include file="layout/links.jsp"%>
 
     </head>
