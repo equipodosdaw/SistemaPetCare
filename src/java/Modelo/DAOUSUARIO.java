@@ -42,7 +42,7 @@ public class DAOUSUARIO extends Conexion {
         List<Usuario> usuarios;
         Usuario usu;
         ResultSet rs = null;
-        String sql = "SELECT U.id_usuario, U.nombreusuario, U.estado, C.nombreperfil"
+        String sql = "SELECT U.id_usuario, U.nombreusuario, U.estado, U.dni, C.nombreperfil"
                 + " FROM usuario U INNER JOIN perfil_usuario C "
                 + "ON C.id_perfil = U.idperfil "
                 + "ORDER BY U.id_usuario";
@@ -56,6 +56,7 @@ public class DAOUSUARIO extends Conexion {
                 usu = new Usuario();
                 usu.setId_usuario(rs.getInt("id_usuario"));
                 usu.setNombreUsuario(rs.getString("nombreusuario"));
+                usu.setDni(rs.getString("dni"));
                 usu.setEstado(rs.getBoolean("estado"));
                 usu.setPerfilUsuario(new PerfilUsuario());
                 usu.getPerfilUsuario().setNombrePerfil(rs.getString("nombreperfil"));
