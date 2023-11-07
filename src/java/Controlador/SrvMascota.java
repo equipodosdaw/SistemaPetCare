@@ -164,6 +164,7 @@ public class SrvMascota extends HttpServlet {
             mascota = new Mascota();
             mascota.setNombreMascota(request.getParameter("txtNombre"));
             mascota.setSexo(request.getParameter("txtSexo"));
+            mascota.setFecha_nacimiento(request.getParameter("txtFechaN"));
             mascota.setRaza(request.getParameter("txtRaza"));
             mascota.setEspecie(request.getParameter("txtEspecie"));
             mascota.setMicrochip(request.getParameter("txtMicroChip"));
@@ -237,6 +238,7 @@ public class SrvMascota extends HttpServlet {
             mascota.setId_mascota(Integer.parseInt(request.getParameter("hCodigo")));
             mascota.setNombreMascota(request.getParameter("txtNombre"));
             mascota.setSexo(request.getParameter("txtSexo"));
+            mascota.setFecha_nacimiento(request.getParameter("txtFechaN"));
             mascota.setRaza(request.getParameter("txtRaza"));
             mascota.setEspecie(request.getParameter("txtEspecie"));
             mascota.setMicrochip(request.getParameter("txtMicroChip"));

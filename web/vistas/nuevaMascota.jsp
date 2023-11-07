@@ -47,7 +47,7 @@
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label">Nombre Mascota</label>
                                     <div class="col-sm-4 input-group">
-                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                        <span class="input-group-addon"><i class="fa fa-id-card-o"></i></span>
                                         <input id="nombre" type="text" class="form-control" placeholder="Nombre de la mascota" name="txtNombre" value="">
                                     </div>
                                 </div>
@@ -55,15 +55,23 @@
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label">Sexo</label>
                                     <div class="col-sm-4 input-group">
-                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                        <span class="input-group-addon"><i class="fa fa-intersex"></i></span>
                                         <input id="nombre" type="text" class="form-control" placeholder="Macho o Hembra" name="txtSexo" value="">
+                                    </div>
+                                </div>
+                                
+                                 <div class="form-group">
+                                    <label class="col-sm-2 control-label">Fecha nacimiento</label>
+                                    <div class="col-sm-4 input-group">
+                                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                        <input id="nombre" type="date" class="form-control" placeholder="2014-05-12" name="txtFechaN" value="">
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label">Raza</label>
                                     <div class="col-sm-4 input-group">
-                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                        <span class="input-group-addon"><i class="fa fa-tags"></i></span>
                                         <input id="nombre" type="text" class="form-control" placeholder="Ej: Collie" name="txtRaza" value="">
                                     </div>
                                 </div>
@@ -71,7 +79,7 @@
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label">Especie</label>
                                     <div class="col-sm-4 input-group">
-                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                        <span class="input-group-addon"><i class="fa fa-paw"></i></span>
                                         <input id="nombre" type="text" class="form-control" placeholder="Ej: Perro" name="txtEspecie" value="">
                                     </div>
                                 </div>
@@ -79,7 +87,7 @@
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label">Nº MicroChip</label>
                                     <div class="col-sm-4 input-group">
-                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                        <span class="input-group-addon"><i class="fa fa-microchip"></i></span>
                                         <input id="nombre" type="text" class="form-control" placeholder="Ej: 234358876ND" name="txtMicroChip" value="">
                                     </div>
                                 </div>
@@ -87,7 +95,7 @@
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label">Esterilizada</label>
                                     <div class="col-sm-4 input-group">
-                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                        <span class="input-group-addon"><i class="fa fa-medkit"></i></span>
                                         <input id="nombre" type="text" class="form-control" placeholder="Ej: S o N" name="txtEsterilizada" value="">
                                     </div>
                                 </div>
@@ -95,7 +103,7 @@
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label">Peso en kg</label>
                                     <div class="col-sm-4 input-group">
-                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                        <span class="input-group-addon"><i class="fa fa-balance-scale"></i></span>
                                         <input id="nombre" type="text" class="form-control" placeholder="Ej: 9.5" name="txtPeso" value="">
                                     </div>
                                 </div>
@@ -103,7 +111,7 @@
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label">Color</label>
                                     <div class="col-sm-4 input-group">
-                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                        <span class="input-group-addon"><i class="fa fa-paint-brush"></i></span>
                                         <input id="nombre" type="text" class="form-control" placeholder="Ej: Negro" name="txtColor" value="">
                                     </div>
                                 </div>
@@ -129,8 +137,8 @@
                             </div>
 
                             <div class="box-footer">
-                                <button type="reset" class="btn btn-danger"><i class="fa fa-close red"></i> Cancelar</button>
-                                <button type="submit" name="btnRegistrar" value="Registrar" class="btn btn-success"><i class="fa fa-refresh"></i> Agregar Mascota</button>
+                                <button type="reset" onclick="location.href = 'srvMascota?accion=listasMascotas';" class="btn btn-danger"><i class="fa fa-close red"></i> Cancelar</button>
+                                <button type="submit" name="btnRegistrar" value="Registrar" class="btn btn-success"><i class="fa fa-check"></i> Agregar Mascota</button>
 
                             </div>
 

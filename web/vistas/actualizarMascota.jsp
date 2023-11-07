@@ -80,7 +80,7 @@
                                                     <div class="form-group">
                                                         <label class="col-sm-2 control-label">Nombre </label>
                                                         <div class="col-sm-4 input-group">
-                                                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                                            <span class="input-group-addon"><i class="fa fa-id-card-o"></i></span>
                                                             <input type="text" class="form-control" placeholder="" name="txtNombre" maxlength="15"
                                                                    value="${mascotas.nombreMascota}">
                                                         </div>
@@ -90,7 +90,7 @@
                                                        <div class="form-group">
                                                         <label class="col-sm-2 control-label">Especie </label>
                                                         <div class="col-sm-4 input-group">
-                                                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                                            <span class="input-group-addon"><i class="fa fa-paw"></i></span>
                                                             <input type="text" class="form-control" placeholder="" name="txtEspecie" maxlength="15"
                                                                    value="${mascotas.especie}">
                                                         </div>
@@ -99,7 +99,7 @@
                                                         <div class="form-group">
                                                         <label class="col-sm-2 control-label">Raza </label>
                                                         <div class="col-sm-4 input-group">
-                                                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                                            <span class="input-group-addon"><i class="fa fa-tags"></i></span>
                                                             <input type="text" class="form-control" placeholder="" name="txtRaza" maxlength="15"
                                                                    value="${mascotas.raza}">
                                                         </div>
@@ -108,7 +108,7 @@
                                                         <div class="form-group">
                                                         <label class="col-sm-2 control-label">Sexo </label>
                                                         <div class="col-sm-4 input-group">
-                                                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                                            <span class="input-group-addon"><i class="fa fa-intersex"></i></span>
                                                             <input type="text" class="form-control" placeholder="" name="txtSexo" maxlength="15"
                                                                    value="${mascotas.sexo}">
                                                         </div>
@@ -117,7 +117,7 @@
                                                         <div class="form-group">
                                                         <label class="col-sm-2 control-label">Fecha nacimiento </label>
                                                         <div class="col-sm-4 input-group">
-                                                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                                                             <input type="text" class="form-control" placeholder="" name="txtFechaN" maxlength="15"
                                                                    value="${mascotas.fecha_nacimiento}">
                                                         </div>
@@ -126,7 +126,7 @@
                                                         <div class="form-group">
                                                         <label class="col-sm-2 control-label">Peso </label>
                                                         <div class="col-sm-4 input-group">
-                                                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                                            <span class="input-group-addon"><i class="fa fa-balance-scale"></i></span>
                                                             <input type="text" class="form-control" placeholder="" name="txtPeso" maxlength="15"
                                                                    value="${mascotas.peso}">
                                                         </div>
@@ -135,7 +135,7 @@
                                                         <div class="form-group">
                                                         <label class="col-sm-2 control-label">Color </label>
                                                         <div class="col-sm-4 input-group">
-                                                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                                            <span class="input-group-addon"><i class="fa fa-paint-brush"></i></span>
                                                             <input type="text" class="form-control" placeholder="" name="txtColor" maxlength="15"
                                                                    value="${mascotas.color}">
                                                         </div>
@@ -144,7 +144,7 @@
                                                         <div class="form-group">
                                                         <label class="col-sm-2 control-label">Nº Microchip </label>
                                                         <div class="col-sm-4 input-group">
-                                                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                                            <span class="input-group-addon"><i class="fa fa-microchip"></i></span>
                                                             <input type="text" class="form-control" placeholder="" name="txtMicroChip" maxlength="15"
                                                                    value="${mascotas.microchip}">
                                                         </div>
@@ -165,7 +165,7 @@
 
                                                     <!-- /.box-body -->
                                                     <div class="box-footer">
-                                                        <button type="reset" class="btn btn-danger"><i class="fa fa-close red"></i> Cancelar</button>
+                                                        <button type="reset" onclick="location.href = 'srvMascota?accion=listasMascotas';" class="btn btn-danger"><i class="fa fa-close red"></i> Cancelar</button>
                                                         <button type="submit" name="btnRegistrar" value="Registrar" class="btn btn-success"><i class="fa fa-refresh"></i> Actualizar Mascota</button>
 
                                                     </div>

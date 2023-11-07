@@ -49,8 +49,8 @@ public class DAOMASCOTA extends Conexion {
     
     public void registrarMascota(Mascota masc) throws Exception {
         String sql;
-        sql = "INSERT INTO mascota (nombre, sexo, raza, especie, microchip, esterilizada, peso, color, dni) VALUES"
-                + " ('" + masc.getNombreMascota() + "', '" +  masc.getSexo()  + "' , '" +  masc.getRaza()  + "' , '" +  
+        sql = "INSERT INTO mascota (nombre, sexo, fecha_nacimiento, raza, especie, microchip, esterilizada, peso, color, dni) VALUES"
+                + " ('" + masc.getNombreMascota() + "', '" +  masc.getSexo()  + "' , '" +  java.sql.Date.valueOf(masc.getFecha_nacimiento())+ "' , '" +  masc.getRaza()  + "' , '" +  
                  masc.getEspecie()  + "' , '" +  masc.getMicrochip()  + "' , "   +  masc.getEsterilizada() + " , "
                 +  masc.getPeso() + " , '" +  masc.getColor()  + "' , '"  + masc.getUsuario().getDni()  + "'  )"; 
         try {
@@ -109,7 +109,8 @@ public class DAOMASCOTA extends Conexion {
     public void actualizarMascota(Mascota masc) throws Exception {
         String sql = "UPDATE mascota SET nombre = '"
                 + masc.getNombreMascota() + "' , sexo = '"
-                + masc.getSexo() + "' , raza = '"
+                + masc.getSexo() + "' , fecha_nacimiento = '"
+                + masc.getFecha_nacimiento()+ "' , raza = '"
                 + masc.getRaza() + "' , especie = '"
                 + masc.getEspecie() + "' , microchip = '"
                 + masc.getMicrochip() + "' , peso = "
