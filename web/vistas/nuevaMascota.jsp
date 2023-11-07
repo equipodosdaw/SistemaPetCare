@@ -93,10 +93,10 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label">Peso</label>
+                                    <label class="col-sm-2 control-label">Peso en kg</label>
                                     <div class="col-sm-4 input-group">
                                         <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                        <input id="nombre" type="text" class="form-control" placeholder="Ej: 9,5 Kg" name="txtPeso" value="">
+                                        <input id="nombre" type="text" class="form-control" placeholder="Ej: 9.5" name="txtPeso" value="">
                                     </div>
                                 </div>
 

@@ -153,11 +153,13 @@ public class SrvMascota extends HttpServlet {
         DAOMASCOTA dao;
         Mascota mascota = null;
         Usuario usuario;
+        
 
         if (request.getParameter("txtNombre") != null
                 && request.getParameter("Cliente") != null
                 && request.getParameter("txtEspecie") != null
                 && request.getParameter("txtMicroChip") != null ) {
+            String esterilizado = "N";
 
             mascota = new Mascota();
             mascota.setNombreMascota(request.getParameter("txtNombre"));
@@ -165,7 +167,13 @@ public class SrvMascota extends HttpServlet {
             mascota.setRaza(request.getParameter("txtRaza"));
             mascota.setEspecie(request.getParameter("txtEspecie"));
             mascota.setMicrochip(request.getParameter("txtMicroChip"));
-            mascota.setEsterilizada(Integer.parseInt(request.getParameter("txtEsterilizada")));
+            if (request.getParameter("txtEsterilizada") != null) {
+                if( request.getParameter("txtEsterilizada").toUpperCase().equals("S") ){
+                    mascota.setEsterilizada(1);
+                } else {
+                    mascota.setEsterilizada(0);
+                }
+            }
             mascota.setPeso(Float.parseFloat(request.getParameter("txtPeso")));
             mascota.setColor(request.getParameter("txtColor"));
             usuario = new Usuario();
