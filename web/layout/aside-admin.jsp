@@ -29,8 +29,7 @@
                         %>
                         <a href="<c:url value="srvMascota">
 
-                           <c:param name="accion" value="leerMascota
-                                    " />
+                           <c:param name="accion" value="leerMascota" />
                            <c:param  name="cod" value="${cliente.id_usuario}" />
 
                             </c:url>">

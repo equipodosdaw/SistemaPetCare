@@ -4,11 +4,6 @@
         <span class="logo-mini"><img class="img-fluid" src="dist/img/logo/icon-logo.png" alt=""/></span>
         <!-- logo for regular state and mobile devices -->
         <span class="logo-lg"><img class="img-fluid" src="dist/img/logo/logo_blanco_PETCARE.png" alt=""/></span>
-        
-
-        
-        
-        
     </a>
 
     <!-- Header Navbar -->
@@ -24,18 +19,35 @@
                 <li class="dropdown user user-menu">
                     <!-- Menu Toggle Button -->
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <span class="hidden-xs"> ${admin.nombreUsuario}</span>
-                        <img src="dist/img/admin.png" class="user-image" alt="User Image">
+                        <c:if test="${admin.nombreUsuario != null}">
+                            <span class="hidden-xs"> ${admin.nombreUsuario}</span>
+                            <img src="dist/img/admin.png" class="user-image" alt="User Image">
+                        </c:if>
+                        <c:if test="${cliente.nombreUsuario != null}">
+                            <span class="hidden-xs"> ${cliente.nombreUsuario}</span>
+                            <img src="dist/img/user.png" class="user-image" alt="User Image">
+                        </c:if>
                     </a>
                     <ul class="dropdown-menu">
                         <!-- The user image in the menu -->
                         <li class="user-header">
+                            <c:if test="${admin.nombreUsuario != null}">
                             <img src="dist/img/admin.png" class="img-circle" alt="User Image">
 
                             <p>   
                                 Bienvenido - ${admin.nombreUsuario}
                                 <small>Usted es,${admin.perfilUsuario.nombrePerfil} </small>
                             </p>
+                            </c:if>
+                            
+                            <c:if test="${cliente.nombreUsuario != null}">
+                            <img src="dist/img/user.png" class="img-circle" alt="User Image">
+
+                            <p>   
+                                Bienvenido - ${cliente.nombreUsuario}
+                                <small>Usted es,${cliente.perfilUsuario.nombrePerfil} </small>
+                            </p>
+                            </c:if>
                         </li>
                         <!-- Menu Footer-->
                         <li class="user-footer">
