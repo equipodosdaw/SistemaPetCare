@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="dist/css/stylelog.css">
         <%@ include file="layout/links.jsp"%>
     </head>
+    
+    
     <body class="d-flex justify-content-center align-items-center vh-100">
         <div class="container col-lg-5 col-md-8 col-10 p-5 rounded-5 shadow">
 
