@@ -44,3 +44,17 @@ a.btn.btn-block.btn-social.btn-facebook.btn-flat.textcredendial {
 .mostrar {
     display:block;
 }
+
+.link{
+    color:black;
+}
+.btn{
+    margin: 8%;
+}
+.form-check-label{
+    
+    border-color: black;
+}
+.form-control{
+    margin-top: 8px;
+}

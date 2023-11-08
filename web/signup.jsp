@@ -12,8 +12,9 @@
     
     
     <body class="d-flex justify-content-center align-items-center vh-100">
-        <div class="container col-lg-5 col-md-8 col-10 p-5 rounded-5 shadow">
-
+        <div class="container" >
+        <div class=" col-lg-5 col-md-8 col-10 p-5 rounded-5 shadow">
+            
             <div>
                 <i class="bi bi-pencil-square log-sign-icons d-flex justify-content-center mb-2" id="login-icon"></i>
             </div>
@@ -39,6 +40,7 @@
 
             <form action="srvUsuario?accion=registrar" onsubmit="verificarPasswords(); return false" method="post" name="formRegistro">
                 <div class="mb-2">
+                   
                     <input type="text" placeholder="Usuario" class="form-control rounded-3" id="nombre" name="txtNombre" required>
                 </div>
 
@@ -47,6 +49,7 @@
                 </div>
 
                 <div class="mb-2">
+                   
                     <input type="password" placeholder="Contraseña" class="form-control  rounded-3" id="password" name="txtClave" required>
                 </div>
 
@@ -62,8 +65,9 @@
 
             <div>
                 <label for="login-link" class="text-light">¿Ya tienes cuenta?</label>
-                <a href="login.jsp" id="login-link" class="link-light">Loguéate</a>
+                <a href="login.jsp" id="login-link" class="link">Loguéate</a>
             </div>
+        </div>
         </div>
                 <script>
                     
@@ -75,7 +79,7 @@ function verificarPasswords() {
     pass2 = document.getElementById('password2');
  
     // Verificamos si las constraseñas no coinciden 
-    if (pass1.value != pass2.value) {
+    if (pass1.value !== pass2.value) {
  
         // Si las constraseñas no coinciden mostramos un mensaje 
         document.getElementById("error").classList.add("mostrar");

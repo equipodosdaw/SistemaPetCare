@@ -73,5 +73,8 @@ ul.treeview-menu > li > a > .fa-solid {
 }
 
 .main-header .navbar {
-    display: contents!important;}
-
+    display: contents!important;
+}
+.link-light{
+    color:black;
+}

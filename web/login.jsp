@@ -51,7 +51,7 @@
                         <label for="Remember" class="form-check-label"><small>Récuerdame</small></label>
                     </div>
                     <div>
-                        <small><a href="#" class="link-light">¿Has olvidado la contraseña?</a></small>
+                        <small><a href="#" class="link">¿Has olvidado la contraseña?</a></small>
                     </div>
                 </div>
 
@@ -63,7 +63,7 @@
 
             <div>
                 <label for="signup-link" class="text-light">¿No tienes cuenta?</label>
-                <a href="signup.jsp" id="signup-link" class="link-light">Registrate</a>
+                <a href="signup.jsp" id="signup-link" class="link">Registrate</a>
             </div>
         </div>
                     </div>
