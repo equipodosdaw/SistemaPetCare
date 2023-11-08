@@ -1,8 +1,10 @@
 package Controlador;
 
+import Modelo.DAOMASCOTA;
 import Modelo.DAOPERFIL;
 import Modelo.DAOPROVINCIA;
 import Modelo.DAOUSUARIO;
+import Modelo.Mascota;
 import Modelo.PerfilUsuario;
 import Modelo.Provincias;
 import Modelo.Usuario;
@@ -50,6 +52,9 @@ public class SrvUsuario extends HttpServlet {
                         break;
                     case "eliminarUsuario":
                         eliminarUsuario(request, response);
+                        break;
+                    case "calendario":
+                        reservaCita(request, response);
                         break;
                     case "desactivarUsuario":
                         desactivarUsuario(request, response);
@@ -371,6 +376,28 @@ public class SrvUsuario extends HttpServlet {
             }
         } else {
             request.setAttribute("msje", "No se encontró el usuario");
+        }
+    }
+    
+    private void reservaCita(HttpServletRequest request, HttpServletResponse response) {
+
+        DAOMASCOTA dao = new DAOMASCOTA();
+        List<Mascota> mascota = null;
+        try {
+            mascota = dao.listarTodasMascotas();
+            request.setAttribute("mascotas", mascota);
+
+        } catch (Exception e) {
+            request.setAttribute("msje", "No se pudo listar las mascotas" + e.getMessage());
+        } finally {
+            dao = null;
+        }
+        try {
+            this.getServletConfig().getServletContext().
+                    getRequestDispatcher("/vistas/reservaCita.jsp"
+                    ).forward(request, response);
+        } catch (Exception e) {
+            request.setAttribute("msje", "No se pudo realizar la operacion" + e.getMessage());
         }
     }
     

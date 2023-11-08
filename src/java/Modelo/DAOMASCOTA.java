@@ -8,6 +8,44 @@ import java.util.List;
 
 public class DAOMASCOTA extends Conexion {
     
+    
+    
+    public List<Mascota> listarTodasMascotas() throws Exception {
+        List<Mascota> mascotas;
+        Mascota mascota;
+        ResultSet rs = null;
+        
+        String sql = "SELECT M.id_mascota, M.nombre, M.sexo, M.dni, M.estado "
+                + " FROM mascota M "                
+                + "ORDER BY M.id_mascota";
+        
+        try {
+            this.conectar(false);
+            rs = this.ejecutarOrdenDatos(sql);
+            mascotas = new ArrayList<>();
+            //devuelve un conjunto de datos
+            while (rs.next() == true) {
+                mascota = new Mascota();
+                mascota.setId_mascota(rs.getInt("id_mascota"));
+                mascota.setNombreMascota(rs.getString("nombre"));
+                mascota.setEstado(rs.getBoolean("estado"));
+                mascota.setSexo(rs.getString("sexo"));
+                mascota.setDni(rs.getString("dni"));
+               
+
+                mascotas.add(mascota);
+
+            }
+            this.cerrar(true);
+        } catch (Exception e) {
+            throw e;
+        } finally {
+        }
+        
+        return mascotas;
+        
+    }
+    
     public List<Mascota> listarMascota() throws Exception {
         List<Mascota> mascotas;
         Mascota mascota;
@@ -159,6 +197,6 @@ public class DAOMASCOTA extends Conexion {
             throw e;
         } 
     }
-
+    
     
 }

@@ -64,7 +64,7 @@
                     <li><a href="#"><i class="fa-solid fa-syringe"></i>Vacunas</a></li>
                 </ul>
             </li>
-            <li><a href="#"><i class="fa-solid fa-calendar-days"></i> <span>Calendario</span></a></li>
+            <li><a href="srvUsuario?accion=calendario"><i class="fa-solid fa-calendar-days"></i> <span>Calendario</span></a></li>
             <li class="treeview">
                 <a href="#"><i class="fa fa-cog"></i> <span>Configuración</span>
                     <span class="pull-right-container">
