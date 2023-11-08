@@ -329,6 +329,8 @@ public class SrvUsuario extends HttpServlet {
             perfil = new PerfilUsuario();
             perfil.setCodigo(Integer.parseInt(request.getParameter("cboCargo")));
             usus.setPerfilUsuario(perfil);
+            int provincia;
+            provincia = Integer.parseInt(request.getParameter("txtProvincia"));
             if (request.getParameter("chkEstado") != null) {
                 usus.setEstado(true);
             } else {

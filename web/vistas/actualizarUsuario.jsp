@@ -33,12 +33,15 @@
                         <div class="col-md-3 hidden-xs"></div>
                         <div class="col-xs-2 col-md-1">
                         </div>
+                        
+                        <c:if test="${admin.nombreUsuario != null}">
                         <div class="col-xs-10 col-md-5 ">
                             <div class="btn-group pull-right">
                                 <a href="srvUsuario?accion=listarUsuarios" class="btn btn-default">
                                     <i class="fa fa-align-justify"></i> Ver listado</a>                                              
                             </div>
                         </div>
+                        </c:if>
                     </div>
                 </section>
                 <section class="content">
@@ -65,8 +68,8 @@
 
 
 
-                                <li><a href="#3" data-toggle="tab">Estadísticas</a>
-                                </li>
+                                <!--<li><a href="#3" data-toggle="tab">Estadísticas</a>
+                                </li>-->
                             </ul>
 
                             <div class="tab-content ">
@@ -127,12 +130,19 @@
                                                 }
                                             %>
 
-
+                                            
                                             <div class="form-group">
                                                 <div class="col-sm-offset-2 col-sm-10">
                                                     <div class="checkbox">
                                                         <label>
-                                                            <input type="checkbox" name="chkEstado" 
+                                                            <input 
+                                                                <c:if test="${admin.nombreUsuario != null}">
+                                                                    type="checkbox" 
+                                                                </c:if>
+                                                                <c:if test="${cliente.nombreUsuario != null}">
+                                                                    type="hidden" 
+                                                                </c:if>
+                                                                    name="chkEstado" 
                                                                    <c:out value="${usuario.estado == false ?
                                                                                    'unchecked' : 'checked'}"
                                                                           default="" />>Activo
@@ -140,7 +150,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-
+                                            
                                             <div class="with-border">
                                                 <i class="fa fa-edit"></i> <h3 class="box-title">Información personal</h3>  
                                             </div>
@@ -203,7 +213,7 @@
                                                 <label class="col-sm-2 control-label">Provincia</label>
                                                 <div class="col-sm-4 input-group">
                                                     <span class="input-group-addon"><i class="fa fa-tags"></i></span>
-                                                    <select class="form-control"  name="cboCargo" autofocus=""  required="">
+                                                    <select class="form-control"  name="txtProvincia" autofocus=""  required="">
                                                         <option value="0">Seleccione la provincia</option>
                                                         <c:forEach items="${listarProvincias}" var="provincias">
                                                             <option value="${provincias.id}"  
