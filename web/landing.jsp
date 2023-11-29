@@ -38,21 +38,21 @@
                         <a class="nav-link active " aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item list-group-item list-inline-item elementoMenu">
-                         <a class="nav-link active " aria-current="page" href="#">Nosotros</a>
+                         <a class="nav-link active " aria-current="page" href=#nosotros>Nosotros</a>
                     </li>
                     <li class="nav-item list-group-item list-inline-item elementoMenu">
-                        <a class="nav-link active " aria-current="page" href="#">Servicios</a>
+                        <a class="nav-link active " aria-current="page" href="#servicios">Servicios</a>
                     </li>
 
                     <li class="nav-item dropdown list-group-item list-inline-item elementoMenu">
-                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Acceso</a>
+                        <a class="nav-link dropdown-toggle " role="button" data-bs-toggle="dropdown" aria-expanded="false">Acceso</a>
                         <ul class="dropdown-menu list-inline">
-                            <li class="elementoMenu"><a class="dropdown-item list-inline-item " href="#">Sign up</a></li>
-                            <li class="elementoMenu"><a class="dropdown-item list-inline-item " href="#">Log in</a></li>
+                            <li class="elementoMenu"><a class="dropdown-item list-inline-item " href="./signup.jsp">Sign up</a></li>
+                            <li class="elementoMenu"><a class="dropdown-item list-inline-item " href="./login.jsp">Log in</a></li>
                         </ul>
                     </li>
                     <li class="nav-item list-group-item list-inline-item elementoMenu">
-                        <a class="nav-link active " aria-current="page" href="#">Contacto</a>
+                        <a class="nav-link active " aria-current="page" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
