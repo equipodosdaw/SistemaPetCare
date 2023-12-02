@@ -241,8 +241,7 @@
 
                 </script>
 
-                <%@ include file="../layout/scripts.jsp"%>
-                </body></div>
+                </div>
 
             <%@ include file="../layout/footer.jsp"%>
 
