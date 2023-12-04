@@ -17,7 +17,7 @@ public class Mascota {
     private float peso;
     private String color;
     private String dni;
-     private boolean estado;
+    private boolean estado;
     private Usuario usuario;
 
     public Date getFecha() {

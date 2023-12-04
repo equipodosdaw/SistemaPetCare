@@ -1,5 +1,7 @@
 package Controlador;
 
+import Modelo.CentroVet;
+import Modelo.DAOCENTROVET;
 import Modelo.DAOMASCOTA;
 import Modelo.DAOPERFIL;
 import Modelo.DAOPROVINCIA;
@@ -391,6 +393,17 @@ public class SrvUsuario extends HttpServlet {
             request.setAttribute("msje", "No se pudo listar las mascotas" + e.getMessage());
         } finally {
             dao = null;
+        }
+        DAOCENTROVET daocentro = new DAOCENTROVET();
+        List<CentroVet> centros = null;
+        try {
+            centros = daocentro.listarCentros();
+            request.setAttribute("centros", centros);
+
+        } catch (Exception e) {
+            request.setAttribute("msje", "No se pudo listar las mascotas" + e.getMessage());
+        } finally {
+            daocentro = null;
         }
         try {
             this.getServletConfig().getServletContext().

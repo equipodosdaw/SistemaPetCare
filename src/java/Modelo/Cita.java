@@ -3,7 +3,6 @@ package Modelo;
 import java.util.Date;
 
 public class Cita {
-  
 
     private int id_cita;
     private Date fecha;

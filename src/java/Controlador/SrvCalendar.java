@@ -76,7 +76,10 @@ public class SrvCalendar extends HttpServlet {
             jsonCitas.append("{");
             jsonCitas.append("\"id\":\"").append(cita.getId_cita()).append("\",");
             jsonCitas.append("\"title\":\"").append(escapeJSON(cita.getMotivo())).append("\",");
-            jsonCitas.append("\"start\":\"").append(cita.getFecha()).append("\"");
+            jsonCitas.append("\"start\":\"").append(cita.getFecha()).append("\",");
+            jsonCitas.append("\"mascota\":\"").append(cita.getId_mascota()).append("\",");
+            jsonCitas.append("\"centro\":\"").append(cita.getCif()).append("\"");
+            
             //Más propiedades de la cita, si es necesario
             jsonCitas.append("}");
         }
@@ -97,7 +100,6 @@ public class SrvCalendar extends HttpServlet {
         List<Cita> citas = new ArrayList<Cita>();
         try {
             citas = dao.listarCitas();           
-
         } catch (Exception e) {
             request.setAttribute("msje", "No se pudo listar las citas" + e.getMessage());
         } finally {
@@ -224,7 +226,7 @@ public class SrvCalendar extends HttpServlet {
             request.setAttribute("msje", "No se encontró la cita");
         }
     }
-    
+  /*  
     public Cita obtenerDetallesCita(int id_cita) {
         DAOCITA dao = new DAOCITA();
         Cita cita = null;
@@ -238,6 +240,8 @@ public class SrvCalendar extends HttpServlet {
         }
         return cita;
     }
+    */
+    
     
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
