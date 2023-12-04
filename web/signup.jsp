@@ -6,29 +6,31 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>PetCare  Sign Up</title>
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
         <link rel="stylesheet" href="dist/css/stylelog.css">
         <%@ include file="layout/links.jsp"%>
     </head>
     
     
     <body class="d-flex justify-content-center align-items-center vh-100">
-        <div class="container" >
-        <div class=" col-lg-5 col-md-8 col-10 p-5 rounded-5 shadow">
+        <div class="container d-flex justify-content-center">
+        <div class="col-lg-5 col-md-8 col-10 p-5 rounded-5 shadow">
             
             <div>
                 <i class="bi bi-pencil-square log-sign-icons d-flex justify-content-center mb-2" id="login-icon"></i>
             </div>
 
-            <div class="text-light d-flex justify-content-center mb-4">
+            <div class="text-light d-flex justify-content-center">
                 <h1>Sign Up</h1>
             </div>
 
-            <div class="alert alert-danger alert-dismissible fade show" role="alert" style="display:${loginPsw ? 'block' : 'none'}" >
+            <!--<div class="alert alert-danger alert-dismissible fade show " role="alert" style="display:${loginPsw ? 'block' : 'none'}" >
                 Te has regisrado correctamente <a href="login.jsp" id="login-link" class="link-light">Loguéate</a>
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-            </div>
+            </div>-->
                 
                 
                 <div id="error" class="alert alert-danger ocultar" role="alert">
@@ -53,11 +55,11 @@
                     <input type="password" placeholder="Contraseña" class="form-control  rounded-3" id="password" name="txtClave" required>
                 </div>
 
-                <div class="mb-4">
+                <div class="mb-2">
                     <input type="password" placeholder="Repite contraseña" class="form-control  rounded-3" id="password2" name="txtClave2" required>
                 </div>
 
-                <div class="input-group mb-3 justify-content-center">
+                <div class="input-group mb-3 d-flex justify-content-center">
                     <button type="submit" name="btnRegistrar" value="Registrar"  class="btn btn-primary rounded-5 login-btn p-5 pb-2 pt-2"><b>SIGN UP</b></button>
                 </div>
 
@@ -65,7 +67,7 @@
 
             <div>
                 <label for="login-link" class="text-light">¿Ya tienes cuenta?</label>
-                <a href="login.jsp" id="login-link" class="link">Loguéate</a>
+                <a href="login.jsp" id="login-link" class="link text-white">Loguéate</a>
             </div>
         </div>
         </div>
