@@ -1,0 +1,229 @@
+body {
+    background-image: url(../img/login/fondo2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/*Contenedor login*/
+.container > div{
+    background: linear-gradient(105deg,#6e99e6 ,#093c94);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+/*Icono login y sign up*/
+.log-sign-icons{
+    font-size: 6rem;
+    color: #002B76;
+}
+
+.login-btn{
+ background-color: #003796;
+}
+
+.login-btn:hover{
+    background-color: #003796;
+}
+
+a.btn.btn-block.btn-social.btn-facebook.btn-flat.textcredendial {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    margin-bottom: 10px;
+}
+
+.ocultar {
+    display:none;
+}
+
+.mostrar {
+    display:block;
+}
+
+.link{
+    color:black;
+}
+.btn{
+    margin: 8%;
+}
+.form-check-label{
+    
+    border-color: black;
+}
+.form-control{
+    margin-top: 8px;
+}
+
+/*landing*/
+
+/*Aqui comienza el hero image*/
+.encabezado{
+	height: 750px;
+	width: 100%;
+	background-image: url("../media/fondo.png");
+	background-size: cover;
+
+}
+
+#logo{
+	width: 120px;
+
+	display: block;
+	margin-left: 15px;
+	margin-top: 10px;
+}
+/*Elementos del menu*/
+.navbar-nav{
+	float: right;
+}
+.list-group-item {
+	position: relative;
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border: none;
+    background-color:rgba(255, 255, 255, 0.3) ;
+
+}
+	
+.elementoMenu>a{
+	font-family: 'Dosis', sans-serif;
+	text-decoration: none;
+	color: darkslategrey;
+}
+
+
+/*texto hero image*/
+
+.tituloEncabezado{
+	font-family: 'Dosis', sans-serif;
+	font-size: 7.5rem;
+	text-align: center;
+	color: #032978;
+	text-shadow: 1px 9px 5px rgba(0, 0, 0, 0.3);
+}
+
+.subtituloEncabezado{
+	font-family: 'Dosis', sans-serif;
+	font-size: 4rem;
+	text-align: center;
+	color: #0A70FB;
+	text-shadow: 1px 9px 5px rgba(0, 0, 0, 0.3);
+
+}
+/*tipografias*/
+
+.tituloSeccion{
+	margin-top: 30px;
+	color:white;
+	font-family: 'Dosis', sans-serif;
+	font-size: 3.5rem;
+	text-shadow: 1px 9px 5px rgba(0, 0, 0, 0.3);
+}
+
+.subtitulo{
+	color:white;
+	font-family: 'Dosis', sans-serif;
+	font-size: 2rem;
+	text-align: center;
+	position: relative;
+	text-shadow: 1px 9px 5px rgba(0, 0, 0, 0.3);
+}
+.texto{
+	color:white;
+	font-family: 'Dosis', sans-serif;
+	font-size: 1.5rem;
+	text-align: center;
+	position: relative;
+	margin-top: 100px;
+}
+
+.azul{
+	color: #0A70FB;
+}
+
+
+/*Secccion sobre nosotros*/
+.nosotros{
+	background-color: #0A70FB;
+}
+
+.seccion{
+	margin-top: 40px;
+	padding-bottom: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+.textoImg{
+	color:white;
+	font-family: 'Dosis', sans-serif;
+	font-size: 1rem;
+	text-align: center;
+	position: relative;
+}
+
+.imGal{
+	display: block;
+  	margin: auto;
+	height: 400px;
+	width: 550px;
+}
+
+
+/*seccion servicios*/
+.servicios{
+background-image: url("../media/fondo.png");
+background-color:rgba(255, 255, 255, 0.3);
+}
+.card{
+width: 20rem;
+margin:20px;
+}
+.card-body{
+	text-align: center;
+}
+.texto-card{
+	color:#0A70FB;
+	font-family: 'Dosis', sans-serif;
+	font-size: 1.5rem;
+	text-align: center;
+
+}
+
+
+/*seccion contacto*/
+.textoCont{
+	color:white;
+	font-family: 'Dosis', sans-serif;
+	font-size: 1.5rem;
+	text-align: center;
+	position: relative;
+}
+.formulario{
+	color: white;
+}
+
+.btn-primary {
+    color: #0d6efd;
+    background-color: white;
+    border-color: #0d6efd;
+}
+
+/*footer*/
+#footer{
+background-color: #032978;
+
+}
+
+.subFooter{
+background-color: rgba(0, 0, 0, 0.2);}
+
+.fab{
+color: white;
+font-size: 1.5rem;
+}

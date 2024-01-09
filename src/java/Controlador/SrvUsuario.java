@@ -20,10 +20,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+@Controller
 @WebServlet(name = "srvUsuario", urlPatterns = {"/srvUsuario"})
 public class SrvUsuario extends HttpServlet {
-
+    @RequestMapping(value = "/srvUsuario", method = RequestMethod.POST)
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
@@ -290,7 +293,7 @@ public class SrvUsuario extends HttpServlet {
         if (request.getParameter("cod") != null) {
             usus = new Usuario();
             usus.setId_usuario(Integer.parseInt(request.getParameter("cod")));
-
+     
             dao = new DAOUSUARIO();
             try {
                 usus = dao.leerUsuario(usus);

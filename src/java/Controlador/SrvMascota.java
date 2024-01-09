@@ -15,7 +15,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+@Controller
 @WebServlet(name = "srvMascota", urlPatterns = {"/srvMascota"})
 public class SrvMascota extends HttpServlet {
 
@@ -148,7 +150,7 @@ public class SrvMascota extends HttpServlet {
         }
 
     }
-
+    @PostMapping("/srvMascota")
     private void registrarMascota(HttpServletRequest request, HttpServletResponse response) {
         DAOMASCOTA dao;
         Mascota mascota = null;

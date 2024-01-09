@@ -1,0 +1,81 @@
+ul.sidebar-menu.tree li a {
+    color: #FFF;
+    border-bottom:none;
+}
+
+ul.sidebar-menu.tree li{
+border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
+.main-header .logo img {
+    width: 100%;
+    padding: 5px;
+}
+
+@media (min-width: 768px){
+
+.sidebar-mini.sidebar-collapse .main-header .logo {
+    align-items: center;
+    width: 50px;
+    display: flex;
+}
+
+.treeview.menu-open > ul.treeview-menu {
+    background-color: #FFF;
+    overflow: visible;
+    height: auto;
+}
+
+.treeview.menu-open > ul.treeview-menu li a {
+    color: #093c94;
+}
+
+
+.skin-blue .sidebar-menu>li:hover>a, .skin-blue .sidebar-menu>li.active>a, .skin-blue .sidebar-menu>li.menu-open>a {
+    color: #fff;
+    background: #093c94;
+   
+}
+
+.skin-blue .sidebar-menu>li>.treeview-menu {
+    margin: 0 1px;
+    background: #fff;
+color: #093c94;}
+
+.skin-blue .sidebar-menu .treeview-menu>li.active>a,.skin-blue .sidebar-menu .treeview-menu>li>a:hover {
+    color: #093c94;
+    font-weight: 600;
+}
+
+.main-header .sidebar-toggle:hover {
+    color: #093c94;
+}
+
+.sidebar-menu > li > a > .fa, .sidebar-menu > li > a > .fa-solid {
+    width: 20px;
+}
+
+ul.treeview-menu > li > a > .fa-solid {
+    width: 25px;
+}
+
+.navbar-nav > .user-menu > .dropdown-menu > li.user-header > p {
+    color: #093c94;}
+
+.content-header h1 {
+    color: #9b9b9b;
+    font-size:41px;
+}
+
+.main-footer {
+    text-align: center;
+}
+
+.main-header .navbar {
+    display: contents!important;
+}
+.link-light{
+    color:black;
+}
+}
