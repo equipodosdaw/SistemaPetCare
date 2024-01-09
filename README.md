@@ -34,7 +34,7 @@
 
 ### Opción 1
 
-Ejecutar el siguente comando en la terminal:
+Ejecutar el siguente comando en la terminal con git:
 ```bash
 git clone git@github.com:equipodosdaw/SistemaPetCare.git
 ```
